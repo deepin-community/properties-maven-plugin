@@ -1,0 +1,26 @@
+Source: properties-maven-plugin
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Steffen Moeller <moeller@debian.org>
+Build-Depends:
+ debhelper (>= 11),
+ default-jdk,
+ junit4,
+ libmaven-plugin-tools-java,
+ libmaven3-core-java,
+ libplexus-component-metadata-java,
+ libplexus-utils-java,
+ maven-debian-helper (>= 1.5)
+Standards-Version: 4.2.1
+Vcs-Git: https://salsa.debian.org/java-team/properties-maven-plugin.git
+Vcs-Browser: https://salsa.debian.org/java-team/properties-maven-plugin
+Homepage: http://www.mojohaus.org/properties-maven-plugin/
+
+Package: libproperties-maven-plugin-java
+Architecture: all
+Depends: ${maven:Depends}, ${misc:Depends}
+Recommends: ${maven:OptionalDepends}
+Description: Maven Plugin to read and write property files from mojo.codehaus.org
+ The Properties Maven Plugin is here to make life a little easier when dealing
+ with properties. It provides goals to read and write properties from files.

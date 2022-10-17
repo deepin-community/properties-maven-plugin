@@ -1,0 +1,3 @@
+version=3
+opts="mode=git,repack,compression=xz" \
+https://github.com/mojohaus/properties-maven-plugin refs/tags/properties-maven-plugin-([\d\.]+)
